@@ -1,0 +1,4 @@
+// Notes:
+// This lab demonstrates how to use dynamic data in JSX.
+// App.js calculates the current time and displays a greeting based on the time of day.
+// Conditional rendering is used to display different greetings.

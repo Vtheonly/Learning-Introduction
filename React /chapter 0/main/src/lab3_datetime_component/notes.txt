@@ -1,0 +1,4 @@
+// Notes:
+// This lab demonstrates creating a reusable component.
+// DateTime.js displays the current date and time.
+// App.js imports and renders the DateTime component.
