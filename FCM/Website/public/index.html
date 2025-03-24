@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FCM Test</title>
+    <style>
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3367D6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send Notification Test</h1>
+    <button id="sendButton">Send Notification</button>
+
+    <!-- Import your existing Firebase.js file -->
+    <script src="firebase.js"></script>
+    
+    <script>
+        // This script assumes your firebase.js file already initializes Firebase
+        // and provides access to the 'db' object for Firestore
+
+        // Add click event to button
+        document.getElementById('sendButton').addEventListener('click', async () => {
+            try {
+                // Add a notification document to Firestore
+                const docRef = await db.collection("notifications").add({
+                    title: "New Message",
+                    body: "This is a test notification from the web app!",
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                });
+                console.log("Notification added with ID: ", docRef.id);
+                alert("Notification sent successfully!");
+            } catch (e) {
+                console.error("Error sending notification: ", e);
+                alert("Error sending notification: " + e.message);
+            }
+        });
+    </script>
+</body>
+</html>
