@@ -1,0 +1,8 @@
+youtube-transcript-api>=0.5.0
+scikit-learn>=1.0.2
+nltk>=3.7
+joblib>=1.1.0
+numpy>=1.22.0
+pandas>=1.4.0
+# Optional: for better text processing
+spacy>=3.0.0

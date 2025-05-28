@@ -1,4 +1,6 @@
-r/ app.js
+
+
+
 console.log('Hello from app.js!');
 
 function add(a, b) {
@@ -9,6 +11,22 @@ function add(a, b) {
 function multiply(a, b) {
   return a * b;
 }
+
+
+function minus(a,b) {
+  {
+  {
+
+
+
+    }
+   
+  }
+
+
+
+}
+
 
 const resultAdd = add(20, 40);
 console.log('Result of add:', resultAdd);

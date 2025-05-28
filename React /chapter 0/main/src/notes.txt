@@ -1,4 +1,0 @@
-// Notes:
-// This lab demonstrates basic arithmetic operations in React.
-// Calculator.js performs addition, subtraction, multiplication, and division.
-// App.js imports and renders the Calculator component.
