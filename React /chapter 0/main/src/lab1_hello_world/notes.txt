@@ -1,4 +1,0 @@
-// Notes:
-// This lab demonstrates the basic setup of a React component and rendering it to the DOM.
-// App.js defines a simple functional component that displays "Hello, World!".
-// index.js renders the App component into the root element of the HTML page.
