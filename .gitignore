@@ -1,52 +1,24 @@
 # Ignore everything by default
 *
 
-# Allow .gitignore files
+# Allow .gitignore itself
 !.gitignore
 
-# Ignore node_modules in all directories
+# Allow your app folder
+!app/
+!app/**
+
+# Allow common config files
+!package.json
+!package-lock.json
+!requirements.txt
+!README.md
+
+# Still ignore node_modules, envs, IDE files, etc.
 **/node_modules/
-
-# Ignore all .env files in all directories
-**/.env
-**/.env.*
-**/*.env
-
-# Ignore virtual environment folders in all directories
-**/env/
-**/venv/
 **/.venv/
-**/ENV/
-**/VENV/
+**/venv/
 **/__pycache__/
-
-# Ignore hidden system/environment folders
 **/.vscode/
-**/.idea/
-**/.cache/
-**/.history/
-**/.pytest_cache/
-**/.mypy_cache/
-**/.next/
-**/.turbo/
-**/.parcel-cache/
-**/.sass-cache/
-**/.gradle/
-**/.settings/
-
-# Ignore common hidden config and metadata
-**/.DS_Store
-**/Thumbs.db
-**/.eslintcache
-**/.coverage
-**/.pnp*
-**/.yarn*
-**/.npm*
-
-# Ignore log files in all directories
+**/.env
 **/*.log
-
-# Optional: Ignore build/output directories
-**/dist/
-**/build/
-**/out/

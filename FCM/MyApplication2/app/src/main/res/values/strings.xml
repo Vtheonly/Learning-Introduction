@@ -1,7 +1,0 @@
-
-<resources>
-    <string name="app_name">WiFi Toggle</string>
-    <string name="tile_label">WiFi</string>
-    <string name="wifi_on">WiFi</string>
-    <string name="wifi_off">WiFi</string>
-</resources>
